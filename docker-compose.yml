@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  jsonproxy:
+    build: ./
+    ports: 
+        - "9090:9090"
+    environment:
+        - GOPATH=/home
+    working_dir: "/home"
+    command: /home/bin/jsonproxy
